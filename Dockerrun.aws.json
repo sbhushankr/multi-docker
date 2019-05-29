@@ -25,7 +25,8 @@
     {
       "name": "nginx",
       "image": "sbhushankr/multi-nginx",
-      "hostname": true,
+      "hostname": "nginx",
+      "essential": true,
       "portMappings": [
         {
           "hostPort": 80,
