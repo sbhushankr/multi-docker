@@ -8,7 +8,7 @@ before_install:
 script:
   - docker run sbhushankr/react-test npm test -- --coverage
 
-after_sucess:
+after_success:
   - docker build -t sbhushankr/multi-client ./client
   - docker build -t sbhushankr/multi-nginx ./nginx
   - docker build -t sbhushankr/multi-worker ./worker
