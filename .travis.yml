@@ -22,5 +22,3 @@ after_success:
   - docker push sbhushankr/multi-server
   - docker push sbhushankr/multi-worker
 
-
-#

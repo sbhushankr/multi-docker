@@ -2,6 +2,8 @@ FROM node:alpine as builder
 WORKDIR '/app'
 COPY ./package.json ./
 RUN npm install
+RUN npm install axios
+RUN npm install react-router-dom
 COPY . .
 RUN npm run build
 
