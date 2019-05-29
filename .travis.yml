@@ -14,7 +14,7 @@ after_success:
   - docker build -t sbhushankr/multi-worker ./worker
   - docker build -t sbhushankr/multi-server ./server
   # Log in to the docker CLI
-  - echo $Docker_password" | docker login -u "$Docker_id" --password-stdin
+  - echo "$Docker_password" | docker login -u "$Docker_id" --password-stdin
 
   # Take those images and push them to docker hub
   - docker push sbhushankr/multi-client
